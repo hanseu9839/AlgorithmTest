@@ -13,9 +13,10 @@ public class 회문문자열 {
         // for(int i=0;i<len/2;i++){
         //     if(str.charAt(i)!=str.charAt(len-i-1))
         //         return "NO";
-         }
         return answer;
-    }
+     }
+        
+}
     public static void main(String[] args) {
         Scanner kb = new Scanner(System.in);
         String str = kb.next();
