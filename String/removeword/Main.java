@@ -13,15 +13,6 @@ public class Main {
                 answer+=str.charAt(i);
            }
         }
-        // char []a = str.toCharArray();
-        // for(int i=0;i<str.length();i++){
-        //     for(int j=i+1;j<str.length();j++){
-        //         if(a[i]==a[j])
-        //             a[j]=' ';
-        //     }            
-        // }
-        // answer = String.valueOf(a);
-        // answer = answer.replaceAll(" ","");
         
         return answer;
     }
