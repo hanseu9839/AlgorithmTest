@@ -2,7 +2,6 @@ import java.util.*;
 public class 문자열압축 {
     public static String solution(String str){
         String answer = "";
-        char temp=' ';
         int num = 1;
         str+=" ";
         for(int i=0;i<str.length()-1;i++){
@@ -12,7 +11,7 @@ public class 문자열압축 {
                 answer+=str.charAt(i);
                 if(num>1)   answer+=String.valueOf(num);
                 num=1;
-                
+                ß
             }
         }
         return answer;
