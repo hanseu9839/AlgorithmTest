@@ -8,7 +8,7 @@ public class 봉우리 {
         for(int i=0;i<n;i++){
             for(int j=0;j<n;j++){
                 boolean flag = true;
-                for(int k=0;j<4;k++){
+                for(int k=0;k<4;k++){
                     int nx = i+dx[k];
                     int ny = j+dy[k];
                     if(nx>=0&&nx<n&&ny>=0&&ny<n&&arr[nx][ny]>=arr[i][j]){
