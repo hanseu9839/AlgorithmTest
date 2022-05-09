@@ -12,7 +12,8 @@ public class 멘토링 {
                         if(math[k][s]==i) pi=s;
                         if(math[k][s]==j) pj=s;
                     }
-                    if(pi>pj) cnt++;
+                    //등수가 더작아야지 더 좋은 점수이다. 미쳤다리..
+                    if(pi<pj) cnt++;
                 }
                 if(cnt==eN) answer++;
             }
