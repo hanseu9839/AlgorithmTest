@@ -17,11 +17,12 @@ public class postfix {
                 else if(x=='/') stack.push(lt/rt);
             }
         }
+        answer = stack.get(0);
         return answer;
     }
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         String str = scan.next();
-        System.out.println();
+        System.out.println(solution(str));
     }
 }
