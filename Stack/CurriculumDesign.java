@@ -13,7 +13,8 @@ public class CurriculumDesign {
             Q.add(s);
         }
         for(char s : str2.toCharArray()){
-            if(Q.contains(s)&&Q.poll()==s){
+            if(Q.contains(s)&&Q.peek()==s){
+                Q.poll();
                 if(Q.isEmpty()) answer="YES";
             }
         }
