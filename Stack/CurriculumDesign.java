@@ -7,17 +7,25 @@ import java.util.Scanner;
 public class CurriculumDesign {
 
     public static String solution(String str1,String str2){
-        String answer = "NO";
+        String answer = "YES";
         Queue<Character> Q = new LinkedList<>();
+
+        
         for(char s : str1.toCharArray()){
-            Q.add(s);
+            Q.offer(s);
         }
-        for(char s : str2.toCharArray()){
-            if(Q.contains(s)&&Q.peek()==s){
-                Q.poll();
-                if(Q.isEmpty()) answer="YES";
+        for(char x : str2.toCharArray()){
+            if(Q.contains(x)){
+                if(x!=Q.poll()) return "NO":
             }
         }
+        if(!Q.isEmpty()) return "NO";
+        // for(char s : str2.toCharArray()){
+        //     if(Q.contains(s)&&Q.peek()==s){
+        //         Q.poll();
+        //         if(Q.isEmpty()) answer="YES";
+        //     }
+        // }
         return answer;
     }
     public static void main(String[] args) {
