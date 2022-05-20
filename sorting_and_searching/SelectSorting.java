@@ -6,9 +6,9 @@ import java.util.Scanner;
 public class SelectSorting {
     public static ArrayList<Integer> solution(int[] arr,int num){
         ArrayList<Integer> answer = new ArrayList<>();
-        int idx = 0;
-        for(int i=0;i<num;i++){
-            idx=i;
+        
+        for(int i=0;i<num-1;i++){
+            int idx=i;
             for(int j=i+1;j<num;j++){
                 if(arr[j]<arr[idx]) idx=j;
             }
