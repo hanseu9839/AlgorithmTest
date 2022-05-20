@@ -1,6 +1,6 @@
 package sorting_and_searching;
 
-import java.util.ArrayList;
+
 import java.util.Scanner;
 
 public class LRU {
