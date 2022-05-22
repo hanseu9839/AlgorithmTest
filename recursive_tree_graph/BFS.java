@@ -24,7 +24,7 @@ public class BFS {
                 Node cur = Q.poll();
                 System.out.print(cur.data+" ");  
                 if(cur.lt!=null) Q.offer(cur.lt);
-                if(cur.rt!=null) Q.offer(cur.rt);
+                if(cur.rt!=null) Q.offer(cur.rt  );
             }
             L++;
             System.out.println();
