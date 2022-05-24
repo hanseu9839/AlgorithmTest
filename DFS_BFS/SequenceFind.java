@@ -19,7 +19,7 @@ public class SequenceFind {
                     ch[i]=0;
                 }
             }
-        }
+        } 
     }
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
